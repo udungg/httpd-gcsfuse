@@ -251,4 +251,4 @@ RUN rm -f /usr/local/apache2/logs/httpd.pid
 
 EXPOSE 80
 
-CMD ["sh", "-c", "gcsfuse -o allow_other nemo-app /share && httpd -DFOREGROUND"]
+CMD ["sh", "-c", "gcsfuse -o allow_other <bucket-name> /share && httpd -DFOREGROUND"]
